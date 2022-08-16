@@ -4,14 +4,14 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-   
-    if (a==b==c || a==b==d || a==c==d || b==c==d ){
-        console.log("YES");
-    }else {
-        console.log("NO");
-    }let number = result
-    let b = number[0];
-    let c = number[1];
-    let d = number[2];
-    let e = number[3];
+   let number = result.input
+    let a = number[0]
+    let b = number[1];
+    let c = number[2];
+    let d = number[3];
+  if( a==3 && b==7 || b==3 && c==7 || c==3 && d==7 ){
+    console.log("YES");
+  }else {
+    console.log("NO");
+  }
 });
